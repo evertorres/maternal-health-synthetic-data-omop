@@ -1,0 +1,2489 @@
+{
+  "name": "NETUX - Embarazo",
+  "remarks": [
+    "Version 10",
+    "Laura agrega lo pendiente referente al miscarriage, Ever ajusta el desenlace de miscarriage en primer y segundo trimestre. Se valida con jose los códigos pendientes. ",
+    "",
+    "",
+    "Version 9",
+    "24/02/2025 Se verifica con Jose. Se arreglan los problemas del modelo, específicamente en el nodo de preeclampsia hacia eclampsia. Se verifican todos los códigos. "
+  ],
+  "states": {
+    "Initial": {
+      "type": "Initial",
+      "conditional_transition": [
+        {
+          "transition": "Initially_Not_Pregnant",
+          "condition": {
+            "condition_type": "Gender",
+            "gender": "F"
+          }
+        },
+        {
+          "transition": "Terminal"
+        }
+      ],
+      "name": "Initial"
+    },
+    "Terminal": {
+      "type": "Terminal",
+      "name": "Terminal"
+    },
+    "Initially_Not_Pregnant": {
+      "type": "SetAttribute",
+      "attribute": "",
+      "direct_transition": "Initially_No_Children",
+      "name": "Initially_Not_Pregnant"
+    },
+    "Initially_No_Children": {
+      "type": "SetAttribute",
+      "attribute": "",
+      "direct_transition": "Become_Pregnant_Guard",
+      "name": "Initially_No_Children"
+    },
+    "Become_Pregnant_Guard": {
+      "type": "Guard",
+      "allow": {
+        "condition_type": "Attribute",
+        "attribute": "pregnant",
+        "operator": "==",
+        "value": true
+      },
+      "direct_transition": "Become_Pregnant",
+      "name": "Become_Pregnant_Guard"
+    },
+    "Become_Pregnant": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 72892002,
+          "display": "Normal_pregnancy",
+          "value_set": ""
+        }
+      ],
+      "remarks": [
+        "NORMAL PREGNANCY"
+      ],
+      "assign_to_attribute": "Prenatal_Initial_Visit",
+      "direct_transition": "Delay_Eight_Weeks",
+      "name": "Become_Pregnant"
+    },
+    "Delay_Eight_Weeks": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 8
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Prenatal_Initial_Visit",
+      "name": "Delay_Eight_Weeks"
+    },
+    "Prenatal_Initial_Visit": {
+      "type": "Encounter",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 424441002,
+          "display": "Prenatal initial visit (regime/therapy)",
+          "value_set": ""
+        }
+      ],
+      "encounter_class": "ambulatory",
+      "direct_transition": "Pregnancy_Test",
+      "name": "Prenatal_Initial_Visit"
+    },
+    "Pregnancy_Test": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 252160004,
+          "display": "Standard_pregnancy_test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Fetal_Viability_Ultrasound",
+      "name": "Pregnancy_Test"
+    },
+    "Fetal_Viability_Ultrasound": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 169230002,
+          "display": "Ultrasound scan for fetal viability (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "distributed_transition": [
+        {
+          "transition": "Pregnancy_CarePlan",
+          "distribution": 0.82
+        },
+        {
+          "transition": "Ectopic_pregnancy",
+          "distribution": 0.02
+        },
+        {
+          "transition": "Miscarriage in first trimester",
+          "distribution": 0.16000000000000014
+        }
+      ],
+      "name": "Fetal_Viability_Ultrasound"
+    },
+    "Pregnancy_CarePlan": {
+      "type": "CarePlanStart",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 134435003,
+          "display": "Routine_antenatal_care",
+          "value_set": ""
+        }
+      ],
+      "assign_to_attribute": "pregnancy_careplan",
+      "reason": "Become_Pregnant",
+      "activities": [
+        {
+          "system": "SNOMED-CT",
+          "code": 135892000,
+          "display": "Antenatal_education"
+        },
+        {
+          "system": "SNOMED-CT",
+          "code": 713076009,
+          "display": "Antenatal_risk_assessment"
+        },
+        {
+          "system": "SNOMED-CT",
+          "code": 312404004,
+          "display": "Antenatal_blood_tests"
+        }
+      ],
+      "direct_transition": "Blood_pressure",
+      "name": "Pregnancy_CarePlan"
+    },
+    "Blood_pressure": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 46973005,
+          "display": "Blood pressure taking",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Blood_Typing",
+      "reason": "Become_Pregnant",
+      "name": "Blood_pressure"
+    },
+    "Blood_Typing": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 44608003,
+          "display": "Blood_group_typing (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Hemoglobin_Test",
+      "name": "Blood_Typing"
+    },
+    "Hemoglobin_Test": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104091002,
+          "display": "Hemograma, automated, with RBC, WBC, Hgb, Hct, Indices, Platelet count, and manual WBC differential",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Hep_B_Surface_Antigen",
+      "name": "Hemoglobin_Test"
+    },
+    "Hep_B_Surface_Antigen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 47758006,
+          "display": "Hepatitis B surface Antigen Measurement",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "VDRL",
+      "name": "Hep_B_Surface_Antigen"
+    },
+    "HIV_Test": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 165813002,
+          "display": "Human immunodeficiency virus antibody test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Diabetes_Screen",
+      "name": "HIV_Test"
+    },
+    "Urine_Culture": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 117010004,
+          "display": "Urine culture",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Directo y gram de flujo",
+      "name": "Urine_Culture"
+    },
+    "Diabetes_Screen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 271062006,
+          "display": "Fasting Blood Glucose Measurement",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Urine_Culture",
+      "reason": "Become_Pregnant",
+      "name": "Diabetes_Screen"
+    },
+    "Hep_C_Test": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104375008,
+          "display": "Hepatitis C antibody, confirmatory test (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Rubella_Screen",
+      "name": "Hep_C_Test"
+    },
+    "Rubella_Screen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 314098000,
+          "display": "Rubella screening",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Cytomegalovirus_Screen",
+      "name": "Rubella_Screen"
+    },
+    "Cytomegalovirus_Screen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 315089009,
+          "display": "Cytomegalovirus latex test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Prenatal_Initial_Visit",
+      "name": "Cytomegalovirus_Screen"
+    },
+    "End_Prenatal_Initial_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_12",
+      "name": "End_Prenatal_Initial_Visit"
+    },
+    "Week_12": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_12_Visit",
+      "name": "Week_12"
+    },
+    "Week_12_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_1",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma_IgG_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Week_12_Fetal_Heartbeat"
+        }
+      ],
+      "name": "Week_12_Visit"
+    },
+    "Week_12_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Ultrasound scan for fetal anomaly",
+      "name": "Week_12_Fetal_Heartbeat"
+    },
+    "End_Week_12_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_16",
+      "name": "End_Week_12_Visit"
+    },
+    "Week_16": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_16_Visit",
+      "name": "Week_16"
+    },
+    "Week_16_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "distributed_transition": [
+        {
+          "transition": "Miscarriage_In_Second_Trimester",
+          "distribution": 0.04
+        },
+        {
+          "transition": "Week_16_Fundal_Height",
+          "distribution": 0.96
+        }
+      ],
+      "name": "Week_16_Visit"
+    },
+    "Miscarriage_In_Second_Trimester": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 85116003,
+          "display": "Miscarriage in second trimester",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "End_Miscarriage_Encounter_2",
+      "name": "Miscarriage_In_Second_Trimester"
+    },
+    "Week_16_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_16_Fetal_Heartbeat",
+      "name": "Week_16_Fundal_Height"
+    },
+    "Week_16_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_2",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma_IgG_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "End_Week_16_Visit"
+        }
+      ],
+      "name": "Week_16_Fetal_Heartbeat"
+    },
+    "End_Week_16_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_20",
+      "name": "End_Week_16_Visit"
+    },
+    "Week_20": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_20_Visit",
+      "name": "Week_20"
+    },
+    "Week_20_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "distributed_transition": [
+        {
+          "transition": "Week_20_Fundal_Height",
+          "distribution": 0.96
+        },
+        {
+          "transition": "Miscarriage_In_Second_Trimester",
+          "distribution": 0.04
+        }
+      ],
+      "name": "Week_20_Visit"
+    },
+    "Week_20_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 2748040006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Tetanus_Vaccine",
+      "name": "Week_20_Fundal_Height"
+    },
+    "Week_20_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_3",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma_IgG_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "End_Week_20_Visit"
+        }
+      ],
+      "name": "Week_20_Fetal_Heartbeat"
+    },
+    "End_Week_20_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_24",
+      "name": "End_Week_20_Visit"
+    },
+    "Week_24": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Develop_hypertensive_disorder_of_pregnancy",
+          "distribution": 0.08
+        },
+        {
+          "transition": "Develop_gestational_diabetes",
+          "distribution": 0.087
+        },
+        {
+          "transition": "Preterm_Obstetric_Labor",
+          "distribution": 0.09
+        },
+        {
+          "transition": "Week_24_Visit",
+          "distribution": 0.7030000000000001
+        }
+      ],
+      "name": "Week_24"
+    },
+    "Week_24_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_24_Fundal_Height",
+      "name": "Week_24_Visit"
+    },
+    "Week_24_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_24_Fetal_Heartbeat",
+      "name": "Week_24_Fundal_Height"
+    },
+    "Week_24_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 2251580009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Ultrasonography for antepartum monitoring of fetus",
+      "name": "Week_24_Fetal_Heartbeat"
+    },
+    "End_Week_24_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_26",
+      "name": "End_Week_24_Visit"
+    },
+    "Week_28": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 2
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_28_Visit",
+      "name": "Week_28"
+    },
+    "Week_28_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "conditional_transition": [
+        {
+          "transition": "Antibody_screen",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "RH_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Toxoplasma_IgM_level_5",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma IgG NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Glucose_Screen"
+        }
+      ],
+      "name": "Week_28_Visit"
+    },
+    "Antibody_screen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 169673001,
+          "display": "Antenatal RhD antibody screening",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "RhoD_Immune_Globulin",
+      "name": "Antibody_screen"
+    },
+    "RhoD_Immune_Globulin": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 870534008,
+          "display": "Administration of human anti-D immunoglobulin",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Glucose_Screen",
+      "name": "RhoD_Immune_Globulin"
+    },
+    "Glucose_Screen": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 268556000,
+          "display": "Urine screening for glucose (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_28_Fundal_Height",
+      "name": "Glucose_Screen"
+    },
+    "Week_28_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": "274804006 vertificar",
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Week_28_Fetal_Heartbeat",
+      "name": "Week_28_Fundal_Height"
+    },
+    "Week_28_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_28_Visit",
+      "name": "Week_28_Fetal_Heartbeat"
+    },
+    "End_Week_28_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_32",
+      "name": "End_Week_28_Visit"
+    },
+    "Week_32": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_32_Visit",
+      "name": "Week_32"
+    },
+    "Develop_Pre_Eclampsia": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 398254007,
+          "display": "Preeclampsia",
+          "value_set": ""
+        }
+      ],
+      "target_encounter": "Week_24_Visit",
+      "direct_transition": "Assign_preeclampsia",
+      "assign_to_attribute": "pregnancy_complication",
+      "name": "Develop_Pre_Eclampsia"
+    },
+    "Week_32_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_6",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma IgG NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Week_32_Fundal_Height"
+        }
+      ],
+      "name": "Week_32_Visit"
+    },
+    "Develop_hypertensive_disorder_of_pregnancy": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 38341003,
+          "display": "Hypertensive disorder, systemic arterial",
+          "value_set": ""
+        }
+      ],
+      "target_encounter": "Week_24_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "distributed_transition": [
+        {
+          "transition": "Develop_Pre_Eclampsia",
+          "distribution": 0.7
+        },
+        {
+          "transition": "Develop Chronic hypertension complicating",
+          "distribution": 0.15
+        },
+        {
+          "transition": "Develop Pregnancy-induced hypertension",
+          "distribution": 0.15
+        }
+      ],
+      "name": "Develop_hypertensive_disorder_of_pregnancy"
+    },
+    "Preterm_Obstetric_Labor": {
+      "type": "Simple",
+      "direct_transition": "Birth",
+      "name": "Preterm_Obstetric_Labor"
+    },
+    "Week_32_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal heigth",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_32_Fetal_Heartbeat",
+      "name": "Week_32_Fundal_Height"
+    },
+    "Week_32_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Hemoglobin_Test_3",
+      "name": "Week_32_Fetal_Heartbeat"
+    },
+    "End_Week_32_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_36",
+      "name": "End_Week_32_Visit"
+    },
+    "Week_36": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 4
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Develop_hypertensive_disorder_of_pregnancy_2",
+          "distribution": 0.09
+        },
+        {
+          "transition": "Premature_Rupture",
+          "distribution": 0.08
+        },
+        {
+          "transition": "Hemorrhage_3rd_trimester",
+          "distribution": 0.04
+        },
+        {
+          "transition": "Fetal growth restriction",
+          "distribution": 0.1
+        },
+        {
+          "transition": "pre_eclampsia_check",
+          "distribution": 0.69
+        }
+      ],
+      "name": "Week_36"
+    },
+    "Week_36_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_7",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma IgG NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Group_B_Strep_Test"
+        }
+      ],
+      "name": "Week_36_Visit"
+    },
+    "Premature_Rupture": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 44223004,
+          "display": "Premature rupture of membranes",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Premature birth of newborn",
+      "target_encounter": "Week_36_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "name": "Premature_Rupture"
+    },
+    "Hemorrhage_3rd_trimester": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 106004004,
+          "display": "Hemorrhagic complication of pregnancy",
+          "value_set": ""
+        }
+      ],
+      "target_encounter": "Week_36_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "distributed_transition": [
+        {
+          "transition": "Muerte materna",
+          "distribution": 0.05
+        },
+        {
+          "transition": "pre_eclampsia_check",
+          "distribution": 0.6499999999999999
+        },
+        {
+          "transition": "Premature birth of newborn",
+          "distribution": 0.3
+        }
+      ],
+      "name": "Hemorrhage_3rd_trimester"
+    },
+    "Group_B_Strep_Test": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 118001005,
+          "display": "Streptococcus pneumoniae group B antigen assay",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_36_Fundal_height",
+      "name": "Group_B_Strep_Test"
+    },
+    "Week_36_Fundal_height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_36_Fetal_Heartbeat",
+      "name": "Week_36_Fundal_height"
+    },
+    "Week_36_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 22518009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "End_Week_36_Visit",
+      "name": "Week_36_Fetal_Heartbeat"
+    },
+    "End_Week_36_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_38",
+      "name": "End_Week_36_Visit"
+    },
+    "Week_38": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 2
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Week_38_Visit",
+          "distribution": 0.75
+        },
+        {
+          "transition": "Normal_Birth",
+          "distribution": 0.25
+        }
+      ],
+      "name": "Week_38"
+    },
+    "Week_38_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_38_Fundal_Height",
+      "name": "Week_38_Visit"
+    },
+    "Normal_Birth": {
+      "type": "SetAttribute",
+      "attribute": "birth_type",
+      "value": "normal",
+      "direct_transition": "Birth",
+      "name": "Normal_Birth"
+    },
+    "Week_38_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_38_Fetal_Heartbeat",
+      "name": "Week_38_Fundal_Height"
+    },
+    "Week_38_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "End_Week_38_Visit",
+      "name": "Week_38_Fetal_Heartbeat"
+    },
+    "End_Week_38_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_39",
+      "name": "End_Week_38_Visit"
+    },
+    "Week_39": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Week_39_Visit",
+          "distribution": 0.4
+        },
+        {
+          "transition": "Normal_Birth",
+          "distribution": 0.6
+        }
+      ],
+      "name": "Week_39"
+    },
+    "Week_39_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_39_Fundal_Height",
+      "name": "Week_39_Visit"
+    },
+    "Week_39_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_39_Fetal_Heartbeat",
+      "name": "Week_39_Fundal_Height"
+    },
+    "Week_39_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "End_Week_39_Visit",
+      "name": "Week_39_Fetal_Heartbeat"
+    },
+    "End_Week_39_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_40",
+      "name": "End_Week_39_Visit"
+    },
+    "Week_40": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Week_40_Visit",
+          "distribution": 0.3
+        },
+        {
+          "transition": "Normal_Birth",
+          "distribution": 0.7
+        }
+      ],
+      "name": "Week_40"
+    },
+    "Week_40_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_40_Fundal_Height",
+      "name": "Week_40_Visit"
+    },
+    "Week_40_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_40_Fetal_Heart",
+      "name": "Week_40_Fundal_Height"
+    },
+    "Week_40_Fetal_Heart": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "End_Week_40_Visit",
+      "name": "Week_40_Fetal_Heart"
+    },
+    "End_Week_40_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_41",
+      "name": "End_Week_40_Visit"
+    },
+    "Week_41": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 1
+        }
+      },
+      "unit": "weeks",
+      "distributed_transition": [
+        {
+          "transition": "Week_41_Visit",
+          "distribution": 0.1
+        },
+        {
+          "transition": "Normal_Birth",
+          "distribution": 0.9
+        }
+      ],
+      "name": "Week_41"
+    },
+    "Week_41_Visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal continuous visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_41_Fundal_Height",
+      "name": "Week_41_Visit"
+    },
+    "Week_41_Fundal_Height": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 274804006,
+          "display": "Evaluation of uterine fundal height",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "Week_41_Fetal_Heartbeat",
+      "name": "Week_41_Fundal_Height"
+    },
+    "Week_41_Fetal_Heartbeat": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 225158009,
+          "display": "Auscultation of the fetal heart",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "End_Week_41_Visit",
+      "name": "Week_41_Fetal_Heartbeat"
+    },
+    "End_Week_41_Visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Induced_Birth",
+      "name": "End_Week_41_Visit"
+    },
+    "Induced_Birth": {
+      "type": "SetAttribute",
+      "attribute": "birth_type",
+      "value": "induced",
+      "direct_transition": "Birth",
+      "name": "Induced_Birth"
+    },
+    "Birth": {
+      "type": "Simple",
+      "direct_transition": "Hospital_Admission_For_Birth",
+      "name": "Birth"
+    },
+    "Pregnancy_Completion": {
+      "type": "Counter",
+      "attribute": "number_of_children",
+      "action": "increment",
+      "conditional_transition": [
+        {
+          "transition": "Pregnancy_Complication_Ends",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "pregnancy_complication",
+            "operator": "is not nil"
+          }
+        },
+        {
+          "transition": "Pregnancy_CarePlan_Ends"
+        }
+      ],
+      "name": "Pregnancy_Completion"
+    },
+    "Pregnancy_Complication_Ends": {
+      "type": "ConditionEnd",
+      "referenced_by_attribute": "pregnancy_complication",
+      "direct_transition": "Unset_Pregnancy_Complication",
+      "name": "Pregnancy_Complication_Ends"
+    },
+    "Unset_Pregnancy_Complication": {
+      "type": "SetAttribute",
+      "attribute": "pregnancy_complication",
+      "direct_transition": "Pregnancy_CarePlan_Ends",
+      "name": "Unset_Pregnancy_Complication"
+    },
+    "Pregnancy_CarePlan_Ends": {
+      "type": "CarePlanEnd",
+      "referenced_by_attribute": "pregnancy_careplan",
+      "direct_transition": "End_Birth_Encounter",
+      "name": "Pregnancy_CarePlan_Ends"
+    },
+    "End_Birth_Encounter": {
+      "type": "EncounterEnd",
+      "direct_transition": "Unset_Pregnant_Attribute",
+      "name": "End_Birth_Encounter"
+    },
+    "Unset_Pregnant_Attribute": {
+      "type": "SetAttribute",
+      "attribute": "pregnant",
+      "direct_transition": "Become_Pregnant_Guard",
+      "name": "Unset_Pregnant_Attribute"
+    },
+    "VDRL": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 315204007,
+          "display": "VDRL titer",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "HIV_Test",
+      "name": "VDRL"
+    },
+    "Directo y gram de flujo": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 608907007,
+          "display": "Microscopic examination of specimen from female genital tract",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Toxoplasma IgG level",
+      "name": "Directo y gram de flujo"
+    },
+    "Toxoplasma IgG level": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 315199001,
+          "display": "Toxoplasma IgG level",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma_IgG_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "Hep_C_Test"
+        }
+      ],
+      "name": "Toxoplasma IgG level"
+    },
+    "Ultrasound scan for fetal anomaly": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 408814002,
+          "display": "Ultrasound scan for fetal anomaly",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Marcadores BHCG",
+      "name": "Ultrasound scan for fetal anomaly"
+    },
+    "Marcadores BHCG": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 250723004,
+          "display": "Down's biochemical marker measurement",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "PAPP-A",
+      "name": "Marcadores BHCG"
+    },
+    "PAPP-A": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 440090009,
+          "display": "Measurement of pregnancy associated plasma protein A concentration",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "conditional_transition": [
+        {
+          "transition": "Coombs Indirecto",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "RH_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "End_Week_12_Visit"
+        }
+      ],
+      "name": "PAPP-A"
+    },
+    "Coombs Indirecto": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 708132009,
+          "display": "Coombs test, indirect",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_12_Visit",
+      "reason": "Become_Pregnant",
+      "remarks": [
+        "Se le pone resumab o no?"
+      ],
+      "name": "Coombs Indirecto"
+    },
+    "Miscarriage in first trimester": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 19169002,
+          "display": "Miscarriage in first trimester",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "End_Miscarriage_Encounter",
+      "name": "Miscarriage in first trimester"
+    },
+    "Hemoglobin_Test_2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104091002,
+          "display": "Hemograma, automated, with RBC, WBC, Hgb, Hct, Indices, Platelet count, and manual WBC differential",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "CTOG Glucosa",
+      "name": "Hemoglobin_Test_2"
+    },
+    "Ultrasonography for antepartum monitoring of fetus": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 241491007,
+          "display": "Ultrasonography for antepartum monitoring of fetus",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Hemoglobin_Test_2",
+      "name": "Ultrasonography for antepartum monitoring of fetus"
+    },
+    "CTOG Glucosa": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 313194008,
+          "display": "Glucose load test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "HIV_Test_2",
+      "name": "CTOG Glucosa"
+    },
+    "HIV_Test_2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 165813002,
+          "display": "Human immunodeficiency virus antibody test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "direct_transition": "VDRL_2",
+      "name": "HIV_Test_2"
+    },
+    "VDRL_2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 315204007,
+          "display": "VDRL titer",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Urine_Culture_2",
+      "name": "VDRL_2"
+    },
+    "Urine_Culture_2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 117010004,
+          "display": "Urine culture",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Become_Pregnant",
+      "conditional_transition": [
+        {
+          "transition": "Toxoplasma_IgM_level_4",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "Toxoplasma_IgG_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "End_Week_24_Visit"
+        }
+      ],
+      "name": "Urine_Culture_2"
+    },
+    "Coombs indirecto 2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 708132009,
+          "display": "Coombs test, indirect",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_24_Visit",
+      "name": "Coombs indirecto 2"
+    },
+    "Develop_gestational_diabetes": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 40801000119106,
+          "display": "Gestational diabetes mellitus complicating pregnancy",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_24_Visit",
+      "target_encounter": "Week_24_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "name": "Develop_gestational_diabetes"
+    },
+    "Develop Pregnancy-induced hypertension": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 48194001,
+          "display": "Pregnancy-induced hypertension",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_24_Visit",
+      "target_encounter": "Week_24_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "name": "Develop Pregnancy-induced hypertension"
+    },
+    "Develop Chronic hypertension complicating": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 37618003,
+          "display": "Chronic hypertension complicating AND/OR reason for care during pregnancy",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Week_24_Visit",
+      "target_encounter": "Week_24_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "name": "Develop Chronic hypertension complicating"
+    },
+    "Hemoglobin_Test_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104091002,
+          "display": "Hemogram,. automated, wirh TBC, WBC, Hgb, Hct, Indices. Platelet count, and manual WBC differential",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "HIV_3",
+      "reason": "Become_Pregnant",
+      "name": "Hemoglobin_Test_3"
+    },
+    "Fetal growth restriction": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 22033007,
+          "display": "Fetal growth restriction",
+          "value_set": ""
+        }
+      ],
+      "remarks": [
+        "SMFM. Consult Series #52: Diagnosis and management of fetal growth restrictionAm J Obstet Gynecol. 2020 Oct;223(4):B2-B17.",
+        ". Fetal Growth Restriction: ACOG Practice Bulletin, Number 227. Obstet Gynecol. 2021 Feb 1;137(2):e16-e28",
+        ""
+      ],
+      "target_encounter": "Week_36_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "distributed_transition": [
+        {
+          "transition": "pre_eclampsia_check",
+          "distribution": 0.05
+        },
+        {
+          "transition": "Induced_Birth",
+          "distribution": 0.95
+        }
+      ],
+      "name": "Fetal growth restriction"
+    },
+    "Muerte materna": {
+      "type": "Death",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 59283008,
+          "display": "Maternal death",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Terminal",
+      "range": {
+        "low": 1,
+        "high": 10,
+        "unit": "hours"
+      },
+      "referenced_by_attribute": "pregnancy_complication",
+      "name": "Muerte materna"
+    },
+    "Premature_Birth": {
+      "type": "SetAttribute",
+      "attribute": "birth_type",
+      "direct_transition": "Birth",
+      "value": "premature",
+      "name": "Premature_Birth"
+    },
+    "Premature birth of newborn": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 367494004,
+          "display": "Premature birth of newborn",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Premature_Birth",
+      "name": "Premature birth of newborn"
+    },
+    "pre_eclampsia_check": {
+      "type": "Simple",
+      "remarks": [
+        "Si la paciente ya tenía preeclampsia se debe terminar la condición para las que desarrollan eclampsia."
+      ],
+      "distributed_transition": [
+        {
+          "transition": "terminacion_preclampsia",
+          "distribution": 0.08
+        },
+        {
+          "transition": "Week_36_Visit",
+          "distribution": 0.9199999999999999
+        }
+      ],
+      "name": "pre_eclampsia_check"
+    },
+    "terminacion_preclampsia": {
+      "type": "ConditionEnd",
+      "referenced_by_attribute": "pregnancy_complication",
+      "direct_transition": "Develop_Eclampsia",
+      "name": "terminacion_preclampsia"
+    },
+    "Develop_Eclampsia": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 198992004,
+          "display": "Antepartum eclampsia",
+          "value_set": ""
+        }
+      ],
+      "target_encounter": "Week_36_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "direct_transition": "Week_36_Visit",
+      "name": "Develop_Eclampsia"
+    },
+    "Hospital_Admission_For_Birth": {
+      "type": "Encounter",
+      "encounter_class": "emergency",
+      "reason": "Become_Pregnant",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 305249001,
+          "display": "Admission by obstetrician and gynecologist (procedure)",
+          "value_set": ""
+        }
+      ],
+      "distributed_transition": [
+        {
+          "transition": "Cesarean Section",
+          "distribution": 0.4556
+        },
+        {
+          "transition": "Instrumental_Delivery",
+          "distribution": 0.0111
+        },
+        {
+          "transition": "Spontaneous_Vaginal_Delivery",
+          "distribution": 0.5333
+        }
+      ],
+      "remarks": [
+        "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0034-74342022000400358#:~:text=El%20PVI%20fue%20documentado%20en,a%20partos%20por%20v%C3%ADa%20ces%C3%A1rea"
+      ],
+      "name": "Hospital_Admission_For_Birth"
+    },
+    "Spontaneous_Vaginal_Delivery": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 700000006,
+          "display": "Vaginal delivery of fetus (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "distributed_transition": [
+        {
+          "transition": "Postpartum Hemorrhage",
+          "distribution": 0.30000000000000004
+        },
+        {
+          "transition": "Give_Birth",
+          "distribution": 0.7
+        }
+      ],
+      "name": "Spontaneous_Vaginal_Delivery"
+    },
+    "Give_Birth": {
+      "type": "Simple",
+      "direct_transition": "Pregnancy_Completion",
+      "name": "Give_Birth"
+    },
+    "End_Initial_Visit_Towards_Ectopic_Pregnancy": {
+      "type": "EncounterEnd",
+      "direct_transition": "Wait_For_Ectopic_Pregnancy_Encounter",
+      "name": "End_Initial_Visit_Towards_Ectopic_Pregnancy"
+    },
+    "Wait_For_Ectopic_Pregnancy_Encounter": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "UNIFORM",
+        "parameters": {
+          "high": 3,
+          "low": 1
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Ectopic_Pregnancy_Encounter",
+      "name": "Wait_For_Ectopic_Pregnancy_Encounter"
+    },
+    "Ectopic_Pregnancy_Encounter": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Ectopic_pregnancy",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 305408004,
+          "display": "Admission to surgical department (procedure)",
+          "value_set": ""
+        }
+      ],
+      "distributed_transition": [
+        {
+          "transition": "Methotrexate_Injection",
+          "distribution": 0.9
+        },
+        {
+          "transition": "Ectopic_Pregnancy_Surgery_Procedure",
+          "distribution": 0.10000000000000009
+        }
+      ],
+      "name": "Ectopic_Pregnancy_Encounter"
+    },
+    "Methotrexate_Injection": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 236931002,
+          "display": "Methotrexate injection into tubal pregnancy (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "reason": "Ectopic_pregnancy",
+      "distributed_transition": [
+        {
+          "transition": "Length of Stay",
+          "distribution": 0.9
+        },
+        {
+          "transition": "Ectopic_Pregnancy_Surgery_Procedure",
+          "distribution": 0.1
+        }
+      ],
+      "name": "Methotrexate_Injection"
+    },
+    "Ectopic_Pregnancy_Surgery_Procedure": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 445912000,
+          "display": "Excision of fallopian tube and surgical removal of ectopic pregnancy (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Length of Stay",
+      "reason": "Ectopic_pregnancy",
+      "name": "Ectopic_Pregnancy_Surgery_Procedure"
+    },
+    "Length of Stay": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 133899007,
+          "display": "Postoperative care (regime/therapy)",
+          "value_set": ""
+        }
+      ],
+      "distribution": {
+        "kind": "GAUSSIAN",
+        "parameters": {
+          "mean": 1.5,
+          "standardDeviation": 0.5
+        }
+      },
+      "unit": "days",
+      "direct_transition": "End_ectopic_encounter",
+      "name": "Length of Stay"
+    },
+    "End_Miscarriage_Encounter": {
+      "type": "EncounterEnd",
+      "direct_transition": "Wait_For_Miscarriage_Followup_Encounter",
+      "name": "End_Miscarriage_Encounter"
+    },
+    "Wait_For_Miscarriage_Followup_Encounter": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "UNIFORM",
+        "parameters": {
+          "high": 3,
+          "low": 1
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Miscarriage_Followup_Encounter",
+      "name": "Wait_For_Miscarriage_Followup_Encounter"
+    },
+    "Miscarriage_Followup_Encounter": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Miscarriage in first trimester",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 424619006,
+          "display": "Prenatal visit (regime/therapy)",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Ultrasound_for_abortion_follow-up",
+      "name": "Miscarriage_Followup_Encounter"
+    },
+    "End_ectopic_encounter": {
+      "type": "EncounterEnd",
+      "direct_transition": "Wair_for_ectopic_Followup_encounter",
+      "name": "End_ectopic_encounter"
+    },
+    "Wair_for_ectopic_Followup_encounter": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "UNIFORM",
+        "parameters": {
+          "high": 3,
+          "low": 1
+        }
+      },
+      "unit": "days",
+      "direct_transition": "Ectopic_Followup_encounter",
+      "name": "Wair_for_ectopic_Followup_encounter"
+    },
+    "Ectopic_Followup_encounter": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 169762003,
+          "display": "Postnatal visit (regime/therapy)",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Unset_Pregnant_Attribute",
+      "name": "Ectopic_Followup_encounter",
+      "reason": "Ectopic_pregnancy"
+    },
+    "Toxoplasma_IgM_level_1": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species immunoglobulin M antibody (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Week_12_Fetal_Heartbeat",
+      "name": "Toxoplasma_IgM_level_1"
+    },
+    "Toxoplasma_IgM_level_2": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species immunoglobulin M antibody (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_16_Visit",
+      "name": "Toxoplasma_IgM_level_2"
+    },
+    "Toxoplasma_IgM_level_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species immunoglobulin M antibody (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_20_Visit",
+      "name": "Toxoplasma_IgM_level_3"
+    },
+    "Toxoplasma_IgM_level_4": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species IgM antibody",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "conditional_transition": [
+        {
+          "transition": "Coombs indirecto 2",
+          "condition": {
+            "condition_type": "Attribute",
+            "attribute": "RH_NEG",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "transition": "End_Week_24_Visit"
+        }
+      ],
+      "name": "Toxoplasma_IgM_level_4"
+    },
+    "Toxoplasma_IgM_level_5": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species IgM antibody",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Glucose_Screen",
+      "name": "Toxoplasma_IgM_level_5"
+    },
+    "Toxoplasma_IgM_level_6": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species IgM antibody",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Week_32_Fundal_Height",
+      "name": "Toxoplasma_IgM_level_6"
+    },
+    "Toxoplasma_IgM_level_7": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species IgM antibody",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Group_B_Strep_Test",
+      "name": "Toxoplasma_IgM_level_7"
+    },
+    "Tetanus_Vaccine": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 127786006,
+          "display": "Administration of vaccine product containing only Clostridium tetani antigen (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Influenza_Vaccines",
+      "name": "Tetanus_Vaccine"
+    },
+    "Influenza_Vaccines": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 86198006,
+          "display": "Administration of vaccine product containing only Influenza virus antigen (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Week_20_Fetal_Heartbeat",
+      "name": "Influenza_Vaccines"
+    },
+    "Pertussis_Vaccines": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 39343008,
+          "display": "Administration of vaccine product containing only Bordetella pertussis antigen (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_26_Vaccination_visit",
+      "name": "Pertussis_Vaccines"
+    },
+    "HIV_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 165813002,
+          "display": "Human immunodeficiency virus antibody test",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "VDRL_3",
+      "name": "HIV_3"
+    },
+    "VDRL_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 315204007,
+          "display": "VDRL titer",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Urine_Culture_3",
+      "name": "VDRL_3"
+    },
+    "Urine_Culture_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 117010004,
+          "display": "Urine culture",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Ultrasonography for antepartum monitoring of fetus_3",
+      "name": "Urine_Culture_3"
+    },
+    "Ultrasonography for antepartum monitoring of fetus_3": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 241491007,
+          "display": "Ultrasonography for antepartum monitoring of fetus",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Week_32_Visit",
+      "name": "Ultrasonography for antepartum monitoring of fetus_3"
+    },
+    "Develop_hypertensive_disorder_of_pregnancy_2": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 398254007,
+          "display": "Preeclampsia",
+          "value_set": ""
+        }
+      ],
+      "target_encounter": "Week_36_Visit",
+      "assign_to_attribute": "pregnancy_complication",
+      "distributed_transition": [
+        {
+          "transition": "Muerte materna",
+          "distribution": 0.26
+        },
+        {
+          "transition": "pre_eclampsia_check",
+          "distribution": 0.74
+        }
+      ],
+      "name": "Develop_hypertensive_disorder_of_pregnancy_2"
+    },
+    "Cesarean Section": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 11466000,
+          "display": "Cesarean section (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "distributed_transition": [
+        {
+          "transition": "Postpartum Hemorrhage",
+          "distribution": 0.1
+        },
+        {
+          "transition": "Give_Birth",
+          "distribution": 0.9
+        }
+      ],
+      "name": "Cesarean Section"
+    },
+    "Postpartum Hemorrhage": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 47821001,
+          "display": "Postpartum hemorrhage (disorder)",
+          "value_set": ""
+        }
+      ],
+      "distributed_transition": [
+        {
+          "transition": "Pregnancy_Complication_Ends",
+          "distribution": 0.8
+        },
+        {
+          "transition": "Muerte materna",
+          "distribution": 0.2
+        }
+      ],
+      "name": "Postpartum Hemorrhage"
+    },
+    "Assign_preeclampsia": {
+      "type": "SetAttribute",
+      "attribute": "exist_preeclampsia",
+      "direct_transition": "Week_24_Visit",
+      "value": true,
+      "name": "Assign_preeclampsia"
+    },
+    "Instrumental_Delivery": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 236974004,
+          "display": "Instrumental delivery (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "distributed_transition": [
+        {
+          "transition": "Give_Birth",
+          "distribution": 0.8
+        },
+        {
+          "transition": "Postpartum Hemorrhage",
+          "distribution": 0.2
+        }
+      ],
+      "name": "Instrumental_Delivery"
+    },
+    "Toxoplasma_IgM_level": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 104306008,
+          "display": "Measurement of Toxoplasma species immunoglobulin M antibody (procedure)",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "Hep_C_Test",
+      "name": "Toxoplasma_IgM_level"
+    },
+    "Week_26": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "EXACT",
+        "parameters": {
+          "value": 2
+        }
+      },
+      "unit": "weeks",
+      "direct_transition": "Week_26_Vaccination_visit",
+      "name": "Week_26"
+    },
+    "Week_26_Vaccination_visit": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 422808006,
+          "display": "Prenatal supplemental visit",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "Pertussis_Vaccines",
+      "name": "Week_26_Vaccination_visit"
+    },
+    "End_Week_26_Vaccination_visit": {
+      "type": "EncounterEnd",
+      "direct_transition": "Week_28",
+      "name": "End_Week_26_Vaccination_visit"
+    },
+    "Ultrasound_for_abortion_follow-up": {
+      "type": "Procedure",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 430064008,
+          "display": "Transvaginal obstetric ultrasonography",
+          "value_set": ""
+        }
+      ],
+      "unit": "minutes",
+      "direct_transition": "End_Miscarriage_Followup_Encounter",
+      "name": "Ultrasound_for_abortion_follow-up"
+    },
+    "End_Miscarriage_Followup_Encounter": {
+      "type": "EncounterEnd",
+      "direct_transition": "Unset_Pregnant_Attribute",
+      "name": "End_Miscarriage_Followup_Encounter"
+    },
+    "End_Miscarriage_Encounter_2": {
+      "type": "EncounterEnd",
+      "name": "End_Miscarriage_Encounter_2",
+      "direct_transition": "Wait_For_Miscarriage_Followup_Encounter_2"
+    },
+    "Wait_For_Miscarriage_Followup_Encounter_2": {
+      "type": "Delay",
+      "distribution": {
+        "kind": "UNIFORM",
+        "parameters": {
+          "high": 3,
+          "low": 1
+        }
+      },
+      "unit": "weeks",
+      "name": "Wait_For_Miscarriage_Followup_Encounter_2",
+      "direct_transition": "Miscarriage_Followup_Encounter_2"
+    },
+    "Miscarriage_Followup_Encounter_2": {
+      "type": "Encounter",
+      "encounter_class": "ambulatory",
+      "reason": "Miscarriage_In_Second_Trimester",
+      "telemedicine_possibility": "none",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 424619006,
+          "display": "Prenatal visit (regime/therapy)",
+          "value_set": ""
+        }
+      ],
+      "name": "Miscarriage_Followup_Encounter_2",
+      "direct_transition": "Ultrasound_for_abortion_follow-up"
+    },
+    "Ectopic_pregnancy": {
+      "type": "ConditionOnset",
+      "codes": [
+        {
+          "system": "SNOMED-CT",
+          "code": 34801009,
+          "display": "Ectopic pregnancy",
+          "value_set": ""
+        }
+      ],
+      "direct_transition": "End_Initial_Visit_Towards_Ectopic_Pregnancy",
+      "name": "Ectopic_pregnancy"
+    }
+  },
+  "gmf_version": 2
+}
