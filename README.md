@@ -57,8 +57,6 @@ Se generó un dataset sintético de 10.000 pacientes disponible en [Kaggle](http
 
 ## Agradecimientos: 
 
-## **Agradecimientos**  
-
 Este conjunto de datos fue desarrollado con financiación del **Centro Latinoamericano de Inteligencia Artificial ([CLIAS](https://clias.iecs.org.ar/))**, dentro del proyecto **"Fenotipos Computacionales de Morbilidad Materna mediante Inteligencia Artificial" (ID 82).**  
 
 <table>
