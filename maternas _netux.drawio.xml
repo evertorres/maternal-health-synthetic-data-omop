@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.13" pages="5">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Inicio">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="WIyWlLk6GJQsqaUBKTNV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="Control 1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="30" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="14+1 a 28 sem" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-12">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="220" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E-2RWeNOabQ-ZoUygaTh-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="Edad gestacional" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="160" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Primer trimestre" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="230" y="138" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-11">
+          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="220" y="370" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E-2RWeNOabQ-ZoUygaTh-2" value="28+1 a 40 sem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-8">
+          <mxGeometry x="0.2444" y="23" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Tercer trimestre" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="570" y="410" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-12" value="Segundo trimestre" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="460" y="270" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="E-2RWeNOabQ-ZoUygaTh-1" value="&amp;lt;14 sem" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="150" y="130" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="PLARz9F5FsYFCHRvdcNh" name="trimestre 1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b97n8WCwE-iIdIOS3zGH-1" value="Control 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b97n8WCwE-iIdIOS3zGH-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="b97n8WCwE-iIdIOS3zGH-2" target="BFvJZhBNu5I3AA9NmxL6-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b97n8WCwE-iIdIOS3zGH-2" value="&#xa;&lt;b id=&quot;docs-internal-guid-8bf26a66-7fff-c293-57ba-5a6e5bc0bb12&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Hemoclasificación&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;HLG&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Glicemia&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Anticuerpos HIV&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Antígeno superficie VHB&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;VDRL&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Urocultivo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Directo y Gram de flujo vaginal&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Toxoplasmosis&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Rubeola&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Citomegalovirus&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;TSH según factor de riesgo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Ecografía Transvaginal &amp;nbsp; Confirmar embarazo 6 – 7 semanas&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Ecografía Tamizaje genético &amp;nbsp; Semana 11 – 14&amp;nbsp; /&amp;nbsp; Marcadores&amp;nbsp; BHCG Libre , PAPP-A&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Coombs&amp;nbsp; indirecto&lt;/span&gt;&lt;/p&gt;&lt;/b&gt;&lt;br class=&quot;Apple-interchange-newline&quot;&gt;&#xa;&#xa;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="30" width="430" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="b97n8WCwE-iIdIOS3zGH-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.063;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="b97n8WCwE-iIdIOS3zGH-1" target="b97n8WCwE-iIdIOS3zGH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BFvJZhBNu5I3AA9NmxL6-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BFvJZhBNu5I3AA9NmxL6-1" target="BZ1zu--z5TJwl04VEGQw-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BFvJZhBNu5I3AA9NmxL6-4" value="&amp;lt;14 sem" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BFvJZhBNu5I3AA9NmxL6-3">
+          <mxGeometry x="-0.5556" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BFvJZhBNu5I3AA9NmxL6-1" value="Edad gestacional" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="585" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-5" target="BZ1zu--z5TJwl04VEGQw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-2" value="0.16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-1">
+          <mxGeometry x="-0.4375" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-5" target="BZ1zu--z5TJwl04VEGQw-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="680" />
+              <mxPoint x="60" y="680" />
+              <mxPoint x="60" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-4" value="0.02" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-3">
+          <mxGeometry x="0.2733" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-5" target="BZ1zu--z5TJwl04VEGQw-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="680" />
+              <mxPoint x="170" y="680" />
+              <mxPoint x="170" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-10" value="0.82" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-9">
+          <mxGeometry x="1" y="4" relative="1" as="geometry">
+            <mxPoint x="100" y="-64" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-5" value="Primer trimestre" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="595" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-6" target="BZ1zu--z5TJwl04VEGQw-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-2" value="0.9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-16">
+          <mxGeometry x="0.0649" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-6" target="BZ1zu--z5TJwl04VEGQw-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-4" value="0.05" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-19">
+          <mxGeometry x="0.04" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-6" target="BZ1zu--z5TJwl04VEGQw-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-5" value="0.05" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-24">
+          <mxGeometry x="0.0071" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-6" value="Aborto" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="250" y="780" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-30" value="0.9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-7" target="BZ1zu--z5TJwl04VEGQw-29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1290" />
+              <mxPoint x="240" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-32" value="0.1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-7" target="BZ1zu--z5TJwl04VEGQw-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-7" value="Embarazo ectópico" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1250" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-11" value="Embarazo normal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.017;exitY=0.633;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-14" target="BZ1zu--z5TJwl04VEGQw-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-13" target="BZ1zu--z5TJwl04VEGQw-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-3" value="0.9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="m-gO954RlCt0LhO2B01S-1">
+          <mxGeometry x="0.0902" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-13" value="Manejo expectante" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="465" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-14" value="Manejo médico" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-15" target="BZ1zu--z5TJwl04VEGQw-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-8" value="0.97" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-26">
+          <mxGeometry x="-0.4539" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-9" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-26">
+          <mxGeometry x="-0.76" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-15" target="BZ1zu--z5TJwl04VEGQw-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-12" value="0.03" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="BZ1zu--z5TJwl04VEGQw-28">
+          <mxGeometry x="-0.5125" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-15" value="Manejo quirúrgico" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-22" value="0.4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=25;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-18" target="BZ1zu--z5TJwl04VEGQw-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="790" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="665" y="625" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9oumWCRXoHHUgDTfBjZH-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-18" target="BZ1zu--z5TJwl04VEGQw-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-18" value="Misoprostol" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="640" y="800" width="80" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-20" value="Exito del manejo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="595" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-21" target="BZ1zu--z5TJwl04VEGQw-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-21" value="Falla del manejo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="915" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-27" value="Complicación materna (rutura utérina o reintervención)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1080" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-29" value="Manejo médico" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-42" value="0.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-31" target="BZ1zu--z5TJwl04VEGQw-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-31" value="Manejo quirúrgico" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-38" value="0.9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-33" target="BZ1zu--z5TJwl04VEGQw-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-39" value="0.1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-33" target="BZ1zu--z5TJwl04VEGQw-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1340" />
+              <mxPoint x="740" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-33" value="Metrotexate" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1190" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-29" target="BZ1zu--z5TJwl04VEGQw-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-35" value="Exito del manejo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-36" value="Falla del manejo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1370" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BZ1zu--z5TJwl04VEGQw-41" value="1.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.208;entryY=0.888;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-31" target="BZ1zu--z5TJwl04VEGQw-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="1380" />
+              <mxPoint x="610" y="1271" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-6" value="&lt;span id=&quot;docs-internal-guid-0ce1d5f5-7fff-dba8-062e-984cdff2d78b&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Lemmers M, Verschoor MA, et al. Medical treatment for early fetal death (less than 24 weeks). Cochrane Database Syst Rev. 2019 Jun 17;6(6):CD002253 Aborto &lt;/span&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.43;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="925" width="194" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;shape=link;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-6" target="m-gO954RlCt0LhO2B01S-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-10" value="&lt;span id=&quot;docs-internal-guid-ed14592c-7fff-db36-13b1-efb964fa4148&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Exito del manejo&amp;nbsp; quirurgico &amp;nbsp; 97 %&amp;nbsp; Grace Shih, Robin Wallace. First-trimester pregnancy termination: Uterine aspiration. UpToDate. 2021&lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span id=&quot;docs-internal-guid-6610fc80-7fff-20ae-5803-2d7928d5108f&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Cunningham F, Leveno KJ, Bloom SL, el al. Aborto. En: Williams Obstetricia. 25.a ed. Mc Graw Hill; 2019.&lt;/span&gt;&lt;/span&gt;&lt;span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.43;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="910" y="820" width="204" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.021;entryY=0.488;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;shape=link;exitX=1;exitY=0.5;exitDx=0;exitDy=0;width=5;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-15" target="m-gO954RlCt0LhO2B01S-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="1010" />
+              <mxPoint x="860" y="927" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-14" value="&lt;span id=&quot;docs-internal-guid-adc581e7-7fff-d347-55ed-3396d48088a8&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Lemmers M, Verschoor MA, et al. Medical treatment for early fetal death (less than 24 weeks). Cochrane Database Syst Rev. 2019 Jun 17;6(6):CD002253 Aborto &lt;/span&gt;&lt;/span&gt;&lt;div&gt;&lt;span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(33, 33, 33); font-family: Cambria, &amp;quot;Cambria Math&amp;quot;, stixgeneral, &amp;quot;Times New Roman&amp;quot;, Times, serif; text-align: start;&quot;&gt;Vaginal misoprostol may be less effective in accomplishing a complete miscarriage compared to surgical management (6 trials, 943 women, average RR 0.40, 95% CI 0.32 to 0.50&quot;&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#e1d5e7;strokeColor=#9673a6;position2=0.38;" vertex="1" parent="1">
+          <mxGeometry x="880" y="640" width="480" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.011;entryY=0.446;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=8 8;shape=link;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-18" target="m-gO954RlCt0LhO2B01S-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.692;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-18" target="BZ1zu--z5TJwl04VEGQw-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-17" value="0.6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="m-gO954RlCt0LhO2B01S-16">
+          <mxGeometry x="-0.6298" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-23" value="&lt;span id=&quot;docs-internal-guid-1a2f1630-7fff-bc4a-6496-21c4bfcdd1fd&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Ectopico&amp;nbsp; :&amp;nbsp; Manejo&amp;nbsp; expectante Tasa de éxito 30 - 70%&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;96% BHCG &amp;lt; 175&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;66% BHCG 175 - 15000&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;BHCG día 2 - 4 - 7&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Caída 15%&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Luego repetir semanal hasta BHCG &amp;lt; 20&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;NICE 2019&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Po L, Thomas J, et al. Guideline No. 414: Management of Pregnancy of Unknown Location and Tubal and Nontubal Ectopic Pregnancies. J Obstet Gynaecol Can. 2021 May;43(5):614-630.e1.&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1500" width="640" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.07;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;dashPattern=1 1;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-7" target="m-gO954RlCt0LhO2B01S-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-25" value="&lt;span id=&quot;docs-internal-guid-7ad1e9b4-7fff-3d4d-88c0-bf035d0f2be0&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Po L, Thomas J, et al. Guideline No. 414: Management of Pregnancy of Unknown Location and Tubal and Nontubal Ectopic Pregnancies. J Obstet Gynaecol Can. 2021 May;43(5):614-630.e1.&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;ACOG Practice Bulletin No. 193: Tubal Ectopic Pregnancy. Obstet Gynecol. 2018 Mar;131(3):e91-e103&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Gestación ectópica: tubárica y no tubática. Clinic Barcelona. &lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1090" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="m-gO954RlCt0LhO2B01S-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=90;entryPerimeter=0;shape=link;dashed=1;dashPattern=12 12;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="BZ1zu--z5TJwl04VEGQw-29" target="m-gO954RlCt0LhO2B01S-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AYQvlI-TWnImv1ff1af9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="AYQvlI-TWnImv1ff1af9-1" target="BZ1zu--z5TJwl04VEGQw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AYQvlI-TWnImv1ff1af9-1" value="&lt;span id=&quot;docs-internal-guid-1e2b2963-7fff-48e6-2345-39236e19827a&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Cunningham FG, et al. Williams Obstetricia, 25e [Internet]. New York, NY: McGraw-Hill Education; 2019&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.2;text-align: right;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;ACOG Practice Bulletin No. 200: Early Pregnancy Loss. Obstet Gynecol. noviembre de 2018;132(5):e197-207&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="585" width="190" height="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="trimestre 2" id="s4ZPDVRhLCLtRHGTeRMS">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-0" />
+        <mxCell id="vQOT9e-ErMqKlVogycEk-1" parent="vQOT9e-ErMqKlVogycEk-0" />
+        <mxCell id="ZYVSIAYqDq_WbwXkxzWG-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90.35294117647072" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-2" value="Control 4-5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="10" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYVSIAYqDq_WbwXkxzWG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-4" target="EqAiloWPysqMCatOa_vH-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="340" />
+              <mxPoint x="120" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-4" value="&lt;span id=&quot;docs-internal-guid-9858e854-7fff-61a1-3aa5-32efe9bc6393&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Ecografía Detalle anatómico III Nivel&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;HLG&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;CTOG carga 100 gramos&amp;nbsp; (92/ 180 / 153 )&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Anticuerpos HIV&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;VDRL&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Urocultivo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;IgM Toxoplasmosis, si es negativo realizar cada mes&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Coombs indirecto&amp;nbsp; RH&amp;nbsp; (-)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=card;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="310" y="30" width="430" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.023;entryY=0.335;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="WSIhyi2Jm2UCbs4C1Pyw-0" target="vQOT9e-ErMqKlVogycEk-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WSIhyi2Jm2UCbs4C1Pyw-2" value="Si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="vQOT9e-ErMqKlVogycEk-5">
+          <mxGeometry x="-0.5962" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-CJvv6SskV9NNMRpSVa6-1" value="0.7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="vQOT9e-ErMqKlVogycEk-5">
+          <mxGeometry x="0.1598" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="EqAiloWPysqMCatOa_vH-2" target="vQOT9e-ErMqKlVogycEk-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="655" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f73TG-JM3eM0uXctxAzI-0" value="0.08" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="vQOT9e-ErMqKlVogycEk-9">
+          <mxGeometry x="-0.6105" y="-2" relative="1" as="geometry">
+            <mxPoint x="42" y="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XiTuO8hyo3Td5MEmIUNY-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-19" target="XiTuO8hyo3Td5MEmIUNY-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="640" />
+              <mxPoint x="340" y="673" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XiTuO8hyo3Td5MEmIUNY-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-19" target="XiTuO8hyo3Td5MEmIUNY-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="640" />
+              <mxPoint x="340" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="640" />
+              <mxPoint x="340" y="790" />
+              <mxPoint x="390" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-19" target="rqv5Npk0uVgZ7luAV2qg-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vQOT9e-ErMqKlVogycEk-19" value="Trastornos hipertensivos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="200" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-CJvv6SskV9NNMRpSVa6-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="vQOT9e-ErMqKlVogycEk-2" target="WSIhyi2Jm2UCbs4C1Pyw-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="60" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xeOR8t1-Uk96AY28LFPV-1" value="0.09" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="EqAiloWPysqMCatOa_vH-2" target="EqAiloWPysqMCatOa_vH-7">
+          <mxGeometry x="0.0016" relative="1" as="geometry">
+            <mxPoint x="90.00000000000045" y="1531" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="EqAiloWPysqMCatOa_vH-2" target="hlNW43c2tOk-ZYifxe0v-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-2" value="0,087" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="hlNW43c2tOk-ZYifxe0v-1">
+          <mxGeometry x="0.5057" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EqAiloWPysqMCatOa_vH-2" value="Segundo trimestre" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="60" y="510" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="EqAiloWPysqMCatOa_vH-7" target="hlNW43c2tOk-ZYifxe0v-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EqAiloWPysqMCatOa_vH-7" value="Sindrome parto pretérmino" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="190" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="f6RKs_uEguWcJoS0o8MW-9" value="Muerte fetal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="1090" y="790" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="JMns_x4v79WnhReeV_Hv-0" value="1.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="GP6MVqP5kSQgigXKliIZ-0" target="JMns_x4v79WnhReeV_Hv-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GP6MVqP5kSQgigXKliIZ-0" value="Aborto" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="276" y="495" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GP6MVqP5kSQgigXKliIZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="EqAiloWPysqMCatOa_vH-2" target="GP6MVqP5kSQgigXKliIZ-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i0Z9M5u8mG1ymGQ6ss3V-0" value="0.04" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="GP6MVqP5kSQgigXKliIZ-1">
+          <mxGeometry x="0.1208" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LvO6MHzfcKbKNOL-zGlc-0" value="&lt;span id=&quot;docs-internal-guid-1e2b2963-7fff-48e6-2345-39236e19827a&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Cunningham FG, et al. Williams Obstetricia, 25e [Internet]. New York, NY: McGraw-Hill Education; 2019&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.2;text-align: right;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;ACOG Practice Bulletin No. 200: Early Pregnancy Loss. Obstet Gynecol. noviembre de 2018;132(5):e197-207&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="393.5" y="330" width="300" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="LvO6MHzfcKbKNOL-zGlc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="GP6MVqP5kSQgigXKliIZ-0" target="LvO6MHzfcKbKNOL-zGlc-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JMns_x4v79WnhReeV_Hv-1" value="Manejo medico y quirurgico" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="910" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2IKi0fx5ChVBVe5_whfu-0" value="Misoprostol Intra vaginal y procedimiento qurúrgico tipo&amp;nbsp; legrado&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="1090" y="475" width="140" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="2IKi0fx5ChVBVe5_whfu-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="JMns_x4v79WnhReeV_Hv-1" target="2IKi0fx5ChVBVe5_whfu-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2IKi0fx5ChVBVe5_whfu-5" value="1.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.013;exitY=0.511;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="2IKi0fx5ChVBVe5_whfu-0" target="mEkpm4PAanWY795AdIQQ-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1426" y="610" as="targetPoint" />
+            <mxPoint x="1336" y="670" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mEkpm4PAanWY795AdIQQ-0" value="Exito del manejo" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="1356" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WSIhyi2Jm2UCbs4C1Pyw-0" value="Ha tenido controles prenatales en el 1er trimestre (SI/NO)" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="-10" y="120" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZYVSIAYqDq_WbwXkxzWG-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="AByPo6j9JJoehiB0maxp-0" target="EqAiloWPysqMCatOa_vH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AByPo6j9JJoehiB0maxp-0" value="&#xa;&lt;b id=&quot;docs-internal-guid-8bf26a66-7fff-c293-57ba-5a6e5bc0bb12&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Hemoclasificación&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;HLG&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Glicemia&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Anticuerpos HIV&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Antígeno superficie VHB&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;VDRL&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Urocultivo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Directo y Gram de flujo vaginal&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Toxoplasmosis&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Rubeola&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;IgG Citomegalovirus&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;TSH según factor de riesgo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Ecografía Transvaginal &amp;nbsp; Confirmar embarazo 6 – 7 semanas&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Ecografía Tamizaje genético &amp;nbsp; Semana 11 – 14&amp;nbsp; /&amp;nbsp; Marcadores&amp;nbsp; BHCG Libre , PAPP-A&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Coombs&amp;nbsp; indirecto&lt;/span&gt;&lt;/p&gt;&lt;/b&gt;&lt;br class=&quot;Apple-interchange-newline&quot;&gt;&#xa;&#xa;" style="shape=card;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="-610" y="95" width="430" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="AByPo6j9JJoehiB0maxp-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=230;entryDy=0;entryPerimeter=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" target="AByPo6j9JJoehiB0maxp-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-9" y="180" as="sourcePoint" />
+            <mxPoint x="-179" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AByPo6j9JJoehiB0maxp-2" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="AByPo6j9JJoehiB0maxp-1">
+          <mxGeometry x="-0.1153" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-CJvv6SskV9NNMRpSVa6-0" value="0.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="AByPo6j9JJoehiB0maxp-1">
+          <mxGeometry x="0.3474" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="XiTuO8hyo3Td5MEmIUNY-4" target="rqv5Npk0uVgZ7luAV2qg-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="XiTuO8hyo3Td5MEmIUNY-4" target="rqv5Npk0uVgZ7luAV2qg-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XiTuO8hyo3Td5MEmIUNY-4" value="Preeclampsia" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="390" y="650" width="100" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="XiTuO8hyo3Td5MEmIUNY-6" value="Eclampsia" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="750" y="620" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XiTuO8hyo3Td5MEmIUNY-9" value="HTA crónica" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="380" y="720" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-0" value="HTA gestacional" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="380" y="770" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-4" value="HTA crónica + preeclampsia" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="360" y="575" width="150" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-5" value="Preeclampsia no grave" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="610" y="555" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="rqv5Npk0uVgZ7luAV2qg-8" target="rqv5Npk0uVgZ7luAV2qg-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-8" value="Preelampsia&amp;nbsp; grave" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="610" y="670" width="80" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-10" value="Hellp" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="750" y="720" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rqv5Npk0uVgZ7luAV2qg-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.006;entryY=0.343;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="rqv5Npk0uVgZ7luAV2qg-8" target="XiTuO8hyo3Td5MEmIUNY-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="vQOT9e-ErMqKlVogycEk-1" source="hlNW43c2tOk-ZYifxe0v-0" target="hlNW43c2tOk-ZYifxe0v-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-0" value="Diabetes gestacional&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="156" y="1010" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-3" value="&lt;br&gt;&lt;b id=&quot;docs-internal-guid-cc24cad5-7fff-9c33-1e9a-5665f5159699&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;American Diabetes Association Professional Practice Committee;Management of Diabetes in Pregnancy: Standards of Medical Care in Diabetes-2022. Diabetes Care. 2022 Jan 1;45(Suppl 1):S232-S243.&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;b style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Arial, Verdana; text-align: left;&quot;&gt;Maury Antolín, Maury-Mena Sara Concepción, Marín-Escobar Juan Carlos, Marín-Benítez Andrea Carolina, Martínez-Royert Judith Cristina, Pájaro-Martínez María Cristina. Prevalencia de diabetes gestacional en Colombia: una revisión sistemática y estudio comparativo. Salud, Barranquilla&amp;nbsp; [Internet]. 2023&amp;nbsp; Apr [cited&amp;nbsp; 2024&amp;nbsp; Oct&amp;nbsp; 25] ;&amp;nbsp; 39( 1 ): 165-188. Available from: http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;amp;pid=S0120-55522023000100165&amp;amp;lng=en. &amp;nbsp;Epub&amp;nbsp;Nov&amp;nbsp;18, 2023.&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;a style=&quot;color: rgb(85, 85, 85); border-bottom: 1px dotted rgb(170, 170, 170); text-decoration-line: none; font-family: Arial, Verdana; text-align: left;&quot; href=&quot;https://doi.org/10.14482/sun.39.01.613.004&quot;&gt;https://doi.org/10.14482/sun.39.01.613.004&lt;/a&gt;&lt;span style=&quot;font-family: Arial, Verdana; text-align: left;&quot;&gt;.&lt;/span&gt;&lt;b style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="400" y="1030" width="480" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="hlNW43c2tOk-ZYifxe0v-5" value="&#xa;&lt;b id=&quot;docs-internal-guid-cc24cad5-7fff-9c33-1e9a-5665f5159699&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;American Diabetes Association Professional Practice Committee;Management of Diabetes in Pregnancy: Standards of Medical Care in Diabetes-2022. Diabetes Care. 2022 Jan 1;45(Suppl 1):S232-S243.&lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="vQOT9e-ErMqKlVogycEk-1">
+          <mxGeometry x="400" y="870" width="466" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="trimestre 3" id="SSqfL_iXG22dcAMoLhHO">
+    <mxGraphModel dx="2255" dy="1918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-0" />
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-1" parent="QZlHQjHKU3sWDr-UZKZG-0" />
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90.35294117647072" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-3" value="Control 7-8" style="rounded=0;whiteSpace=wrap;html=1;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="10" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-5" target="QZlHQjHKU3sWDr-UZKZG-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="525" y="340" />
+              <mxPoint x="120" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-5" value="&lt;span id=&quot;docs-internal-guid-9858e854-7fff-61a1-3aa5-32efe9bc6393&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Ecografía Detalle anatómico III Nivel&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;HLG&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;CTOG carga 100 gramos&amp;nbsp; (92/ 180 / 153 )&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Anticuerpos HIV&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;VDRL&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Urocultivo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;IgM Toxoplasmosis, si es negativo realizar cada mes&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Coombs indirecto&amp;nbsp; RH&amp;nbsp; (-)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=card;whiteSpace=wrap;html=1;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="310" y="30" width="430" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.023;entryY=0.335;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-32" target="QZlHQjHKU3sWDr-UZKZG-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-7" value="Si" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-6" connectable="0" vertex="1">
+          <mxGeometry x="-0.5962" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-8" value="0.7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-6" vertex="1" connectable="0">
+          <mxGeometry x="0.1598" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-16" target="QZlHQjHKU3sWDr-UZKZG-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="655" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-10" value="0.5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-9" connectable="0" vertex="1">
+          <mxGeometry x="-0.6105" y="-2" relative="1" as="geometry">
+            <mxPoint x="42" y="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-11" value="Trastornos hipertensivos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="200" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-3" target="QZlHQjHKU3sWDr-UZKZG-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="60" as="sourcePoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-16" target="QZlHQjHKU3sWDr-UZKZG-18" edge="1">
+          <mxGeometry x="0.0016" relative="1" as="geometry">
+            <mxPoint x="90.00000000000045" y="1531" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5amikG8GhWN1GUjbSU9--0" value="0.08" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-15" connectable="0" vertex="1">
+          <mxGeometry x="0.824" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yRe587OoWW9PcBT-0vN9-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-16" target="yRe587OoWW9PcBT-0vN9-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-0" value="0.04" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="yRe587OoWW9PcBT-0vN9-2" connectable="0" vertex="1">
+          <mxGeometry x="0.75" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-16" target="c0kXbtgOkSjvjyn7Czhu-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-11" value="0.1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="c0kXbtgOkSjvjyn7Czhu-8" connectable="0" vertex="1">
+          <mxGeometry x="0.812" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-16" value="Tercer&amp;nbsp; trimestre" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="60" y="510" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-18" target="c0kXbtgOkSjvjyn7Czhu-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-18" value="Ruptura prematura de membranas" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="240" y="720" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-19" value="Muerte materna" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="510" y="565" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-20" value="Muerte fetal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="810" y="1450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-32" value="Ha tenido controles prenatales en el 1er y 2° trimestre (SI/NO)" style="rhombus;whiteSpace=wrap;html=1;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="-10" y="120" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-34" target="QZlHQjHKU3sWDr-UZKZG-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-34" value="&lt;span id=&quot;docs-internal-guid-5c3e7de2-7fff-6e3f-7c46-085f70c18e79&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve; font-size: 11pt; font-family: Aptos; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline;&quot;&gt;Ecografía O&lt;/span&gt;&lt;span style=&quot;background-color: transparent; white-space-collapse: preserve; font-size: 11pt; font-family: Aptos; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline;&quot;&gt;bstétrica semana 30- 32&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;HLG&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Anticuerpos HIV&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;VDRL&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Urocultivo&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;IgM Toxoplasmosis, si es negativo realizar cada mes&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Cultivo recto vaginal semana 35 (vigencia 5 semanas)&lt;/span&gt;&lt;/p&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="shape=card;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="-610" y="95" width="430" height="245" as="geometry" />
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=230;entryDy=0;entryPerimeter=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" target="QZlHQjHKU3sWDr-UZKZG-34" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-9" y="180" as="sourcePoint" />
+            <mxPoint x="-179" y="345" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-36" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-35" connectable="0" vertex="1">
+          <mxGeometry x="-0.1153" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-37" value="0.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-35" vertex="1" connectable="0">
+          <mxGeometry x="0.3474" y="-2" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-11" target="QZlHQjHKU3sWDr-UZKZG-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QZlHQjHKU3sWDr-UZKZG-39" value="0.26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QZlHQjHKU3sWDr-UZKZG-38" vertex="1" connectable="0">
+          <mxGeometry x="0.0251" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="yRe587OoWW9PcBT-0vN9-1" target="c0kXbtgOkSjvjyn7Czhu-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yRe587OoWW9PcBT-0vN9-1" value="Hemorragias del3er trimestre" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="234" y="830" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3muuVVhtELKWRSuoqu_A-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="3muuVVhtELKWRSuoqu_A-0" target="QZlHQjHKU3sWDr-UZKZG-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3muuVVhtELKWRSuoqu_A-0" value="&lt;span id=&quot;docs-internal-guid-c705abc4-7fff-f95c-85a7-f32919b75de8&quot;&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: Arial, sans-serif; color: rgb(31, 31, 31); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;García Robles, R. (2020). Epidemiología de la preeclampsia en una muestra de gestantes de Bogotá (Colombia). &lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: Arial, sans-serif; color: rgb(31, 31, 31); background-color: rgb(255, 255, 255); font-weight: 700; font-style: italic; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Universitas Medica&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: Arial, sans-serif; color: rgb(31, 31, 31); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;. Recuperado a partir de https://revistas.javeriana.edu.co/index.php/vnimedica/article/view/31201&lt;/span&gt;&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="-530" y="610" width="510" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqUuxY0aHDqV4otY0G_--0" value="Eventos tromboembolicos" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="234" y="970" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqUuxY0aHDqV4otY0G_--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.613;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="QZlHQjHKU3sWDr-UZKZG-16" target="ZqUuxY0aHDqV4otY0G_--0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="560" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-2" value="&lt;span id=&quot;docs-internal-guid-601edd72-7fff-7344-d701-a44ed6522348&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Aptos; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Placenta previa: Epidemiology, clinical features, diagnosis, morbidity and mortality. UpToDate.2021&lt;/span&gt;&lt;/p&gt;&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="474" y="700" width="526" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-4" value="&lt;br&gt;&lt;b id=&quot;docs-internal-guid-1896dda5-7fff-9dbd-9a3d-659462e58d42&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;p style=&quot;line-height:1.295;margin-top:0pt;margin-bottom:8pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:11pt;font-family:Aptos;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Society for Maternal-Fetal Medicine (SMFM) Consult Series #44: Management of bleeding in the late preterm period. Am J Obstet Gynecol. 2018 Jan;218(1):B2-B8&lt;/span&gt;&lt;/p&gt;&lt;/b&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="474" y="830" width="530" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" source="c0kXbtgOkSjvjyn7Czhu-7" target="c0kXbtgOkSjvjyn7Czhu-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-7" value="RCIU" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="234" y="1089" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c0kXbtgOkSjvjyn7Czhu-9" value="&#xa;&lt;b id=&quot;docs-internal-guid-cc673d5d-7fff-6a1a-00b5-9b0955bf352c&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;p style=&quot;line-height:1.2;text-align: right;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:12pt;font-family:Arial,sans-serif;color:#212121;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;SMFM. Consult Series #52: Diagnosis and management of fetal&amp;nbsp;growth restrictionAm J Obstet Gynecol. 2020 Oct;223(4):B2-B17.&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:1.2;text-align: right;margin-top:0pt;margin-bottom:0pt;&quot; dir=&quot;ltr&quot;&gt;&lt;span style=&quot;font-size:12pt;font-family:Arial,sans-serif;color:#212121;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;. Fetal Growth Restriction: ACOG Practice Bulletin, Number 227. Obstet Gynecol. 2021 Feb 1;137(2):e16-e28&lt;/span&gt;&lt;/p&gt;&lt;/b&gt;&lt;br class=&quot;Apple-interchange-newline&quot;&gt;&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="QZlHQjHKU3sWDr-UZKZG-1" vertex="1">
+          <mxGeometry x="474" y="1010" width="576" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Puerperio (copia de 2 trimestre)" id="_jWDU524ohpo8QUq57Pt">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="94psjoxv-_1X0o49IJQ--0" />
+        <mxCell id="94psjoxv-_1X0o49IJQ--1" parent="94psjoxv-_1X0o49IJQ--0" />
+        <mxCell id="94psjoxv-_1X0o49IJQ--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90.35294117647072" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ycu_b0JC0K-pcZAt0Uzc-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--3" target="94psjoxv-_1X0o49IJQ--15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ycu_b0JC0K-pcZAt0Uzc-1" value="0.25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="Ycu_b0JC0K-pcZAt0Uzc-0">
+          <mxGeometry x="-0.2762" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--3" target="wDvJwjtzY9hc8v6rvQ-k-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="70" y="200" />
+              <mxPoint x="250" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-8" value="0.10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="wDvJwjtzY9hc8v6rvQ-k-2">
+          <mxGeometry x="0.572" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--3" target="wDvJwjtzY9hc8v6rvQ-k-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_rMoWvlAr2-V_u4U3Kda-0" value="0.304" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="wDvJwjtzY9hc8v6rvQ-k-7">
+          <mxGeometry x="0.8376" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="94psjoxv-_1X0o49IJQ--3" value="Puerperio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="10" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ycu_b0JC0K-pcZAt0Uzc-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--15" target="Ycu_b0JC0K-pcZAt0Uzc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="94psjoxv-_1X0o49IJQ--15" value="Trastornos hipertensivos" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="300" y="-130" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="94psjoxv-_1X0o49IJQ--23" value="Muerte fetal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="810" y="1450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ycu_b0JC0K-pcZAt0Uzc-2" value="&#xa;&lt;b id=&quot;docs-internal-guid-b3da55b0-7fff-0eb6-b674-d2b07a117683&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size:10pt;font-family:Verdana,sans-serif;color:#1f1f1f;background-color:#ffffff;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;&quot;&gt;Sibai BM. Etiology and management of postpartum hypertension-preeclampsia. Am J Obstet Gynecol. 2012;206:470-5. &lt;/span&gt;&lt;/b&gt;&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="625" y="-90" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="wDvJwjtzY9hc8v6rvQ-k-1" target="wDvJwjtzY9hc8v6rvQ-k-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-1" value="Mastitis" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="210" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R9mVnKKV8oAkeL8Uz6bt-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="wDvJwjtzY9hc8v6rvQ-k-4" target="R9mVnKKV8oAkeL8Uz6bt-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-4" value="Infección sitio operatorio" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="210" y="320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_rMoWvlAr2-V_u4U3Kda-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=link;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="wDvJwjtzY9hc8v6rvQ-k-5" target="_rMoWvlAr2-V_u4U3Kda-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-5" value="Depresión portparto" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="210" y="630" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="94psjoxv-_1X0o49IJQ--1" source="94psjoxv-_1X0o49IJQ--3" target="wDvJwjtzY9hc8v6rvQ-k-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-9" value="0.049" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="wDvJwjtzY9hc8v6rvQ-k-6">
+          <mxGeometry x="0.7712" y="-4" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-10" value="&lt;span id=&quot;docs-internal-guid-d6ff2341-7fff-3c26-8ab4-f06e7d5e992c&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: Arial, sans-serif; color: rgb(33, 33, 33); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Boakes E, Woods A, Johnson N, Kadoglou N. Breast Infection: A Review of Diagnosis and Management Practices. Eur J Breast Health. 2018 Jul 1;14(3):136-143.&lt;/span&gt;&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="490" y="180" width="240" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="wDvJwjtzY9hc8v6rvQ-k-12" value="Eventos tromboembolicos" style="ellipse;whiteSpace=wrap;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="210" y="810" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R9mVnKKV8oAkeL8Uz6bt-0" value="Datos extraido acorde al % de cesareas en el medio (44.6% en estudio del 2020) ajustado por el riesgo de ISO en el 5% de las cesareas&lt;div&gt;&lt;span id=&quot;docs-internal-guid-1cb8163b-7fff-b70a-224a-8dbbb9bba72e&quot;&gt;&lt;span style=&quot;font-size: 13pt; font-family: Roboto, sans-serif; color: rgb(33, 33, 33); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Zuleta-Tobón JJ. Evolution of cesarean sections in Colombia and its association with the legal standing of the institutions where deliveries take place. Rev Colomb Obstet Ginecol. 2023 Mar 30;74(1):15-27. English, Spanish. doi: 10.18597/rcog.3901. PMID: 36920899; PMCID: PMC10057327.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Roboto, sans-serif&quot; color=&quot;#212121&quot;&gt;&lt;span style=&quot;font-size: 17.3333px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Arial, Verdana; text-align: left;&quot;&gt;Ramírez Salinas Yamilia, Zayas Illas Arnaldo, Infante del Rey Solmary, Ramírez Salinas Yanilia M, Mesa Castellanos Iveet, Montoto Mayor Vicente. Infección del sitio quirúrgico en puérperas con cesárea. Rev Cubana Obstet Ginecol&amp;nbsp; [Internet]. 2016&amp;nbsp; Mar [citado&amp;nbsp; 2024&amp;nbsp; Oct&amp;nbsp; 25] ;&amp;nbsp; 42( 1 ): . Disponible en: http://scielo.sld.cu/scielo.php?script=sci_arttext&amp;amp;pid=S0138-600X2016000100005&amp;amp;lng=es.&lt;/span&gt;&lt;font face=&quot;Roboto, sans-serif&quot; color=&quot;#212121&quot;&gt;&lt;span style=&quot;font-size: 17.3333px; white-space-collapse: preserve;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="410" y="390" width="660" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="_rMoWvlAr2-V_u4U3Kda-1" value="&#xa;&lt;span style=&quot;color: rgb(33, 33, 33); font-family: Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, Tahoma; font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Gaviria-Arbeláez SL, Uribe-Holguín A, Gil-Castaño LS, Uribe-Bravo SE, Serna-Galeano LE, Álvarez-Mesa C, Palacio-Moná R, Vélez-Cuervo SM. Prevalence of the risk of depression and worry in pregnant women in the context of the COVID-19 pandemic in Antioquia, Colombia, 2020-2021. Rev Colomb Obstet Ginecol. 2022 Jun 30;73(2):194-202. English, Spanish. doi: 10.18597/rcog.3821. PMID: 35939413; PMCID: PMC9395201.&lt;/span&gt;&#xa;&#xa;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="94psjoxv-_1X0o49IJQ--1">
+          <mxGeometry x="420" y="650" width="650" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
